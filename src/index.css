@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Cormorant Garamond", serif;
-  --font-accent: "Playfair Display", serif;
+  --font-display: "DM Serif Display", serif;
+  --font-accent: "DM Serif Display", serif;
   --font-body: "Inter", sans-serif;
 
   /* Light theme colors */
@@ -48,4 +48,5 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-display);
+  font-style: italic;
 }

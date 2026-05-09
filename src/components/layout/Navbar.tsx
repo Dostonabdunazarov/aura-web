@@ -63,8 +63,8 @@ export default function Navbar() {
                   smooth
                   duration={600}
                   offset={-80}
-                  className="text-sm font-medium cursor-pointer transition-colors duration-200 relative group"
-                  style={{ color: 'var(--color-espresso)' }}
+                  className="text-2xl font-medium cursor-pointer transition-colors duration-200 relative group"
+                  style={{ color: 'var(--color-espresso)', fontFamily: 'var(--font-display)', fontStyle: 'italic' }}
                 >
                   {t(key)}
                   <span
