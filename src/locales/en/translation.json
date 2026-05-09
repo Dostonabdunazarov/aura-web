@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "about": "About",
+    "delivery": "Delivery",
+    "promotions": "Promotions",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contacts": "Contacts",
+    "reserve": "Reserve"
+  },
+  "hero": {
+    "title": "AURA",
+    "badge": "Tashkent",
+    "subtitle": "Café in the heart of Tashkent",
+    "description": "A cozy place where every cup of coffee is a story and every dish is a work of taste",
+    "cta_menu": "View Menu",
+    "cta_reserve": "Reserve a Table"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Our Story",
+    "text1": "AURA Café is a place where coziness, taste and atmosphere combine. We opened with a dream to create a space where every guest feels at home.",
+    "text2": "Our chefs lovingly prepare each dish from fresh local ingredients. From aromatic coffee to exquisite desserts — everything is created for your pleasure.",
+    "stat1_value": "500+",
+    "stat1_label": "Happy Guests",
+    "stat2_value": "50+",
+    "stat2_label": "Menu Items",
+    "stat3_value": "8:00–22:00",
+    "stat3_label": "Daily"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Choose a Category",
+    "order_btn": "Order",
+    "calories": "kcal",
+    "currency": "UZS",
+    "categories": {
+      "coffee": "Coffee",
+      "breakfast": "Breakfast",
+      "pastry": "Pastry",
+      "desserts": "Desserts",
+      "drinks": "Drinks",
+      "lunch": "Business Lunch",
+      "hot": "Hot Dishes",
+      "salads": "Salads",
+      "vegan": "Vegetarian",
+      "seasonal": "Seasonal"
+    }
+  },
+  "delivery": {
+    "title": "Delivery",
+    "subtitle": "We'll bring it right to you",
+    "min_order": "Minimum Order",
+    "min_order_value": "50,000 UZS",
+    "delivery_time": "Delivery Time",
+    "delivery_time_value": "30–60 minutes",
+    "delivery_zone": "Delivery Zone",
+    "delivery_zone_value": "Within 5 km from café",
+    "free_delivery": "Free Delivery",
+    "free_delivery_value": "For orders above 150,000 UZS",
+    "order_btn": "Order Delivery",
+    "call_btn": "Call Us"
+  },
+  "promotions": {
+    "title": "Promotions",
+    "subtitle": "Special Offers",
+    "promo_code_placeholder": "Enter promo code",
+    "promo_code_btn": "Apply",
+    "promo_code_success": "Promo code applied!",
+    "promo_code_error": "Invalid promo code",
+    "timer_label": "Ends in:",
+    "days": "d",
+    "hours": "h",
+    "minutes": "m",
+    "seconds": "s"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Café Atmosphere"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to Your Questions"
+  },
+  "testimonials": {
+    "title": "Reviews",
+    "subtitle": "What Our Guests Say"
+  },
+  "qrmenu": {
+    "title": "QR Menu",
+    "subtitle": "Scan the QR code to view the menu",
+    "download_btn": "Download QR Code",
+    "description": "Point your phone camera at the QR code to open the full café menu"
+  },
+  "contact": {
+    "title": "Contacts",
+    "subtitle": "Find Us",
+    "address": "12/2 Afrosiab St., Tashkent",
+    "phone": "+998 90 131-46-96",
+    "hours": "Daily 8:00 AM — 10:00 PM",
+    "manager": "Manager: Abbas Kurbanov",
+    "route_btn": "Get Directions",
+    "form_title": "Write to Us",
+    "form_name": "Your Name",
+    "form_phone": "Phone Number",
+    "form_message": "Message",
+    "form_submit": "Send",
+    "form_success": "Message sent!",
+    "telegram": "Telegram",
+    "instagram": "Instagram"
+  },
+  "footer": {
+    "nav_title": "Navigation",
+    "rights": "All rights reserved",
+    "made_with": "Made with"
+  },
+  "badges": {
+    "spicy": "Spicy",
+    "halal": "Halal",
+    "vegan": "Vegan",
+    "new": "New",
+    "popular": "Popular"
+  },
+  "reservation": {
+    "title": "Reservation",
+    "name": "Name",
+    "phone": "Phone",
+    "date": "Date",
+    "time": "Time",
+    "guests": "Number of Guests",
+    "submit": "Reserve",
+    "success": "Table reserved! We'll contact you shortly."
+  }
+}

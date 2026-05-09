@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "menu": "Menyu",
+    "about": "Biz haqimizda",
+    "delivery": "Yetkazib berish",
+    "promotions": "Aksiyalar",
+    "gallery": "Galereya",
+    "faq": "FAQ",
+    "contacts": "Kontaktlar",
+    "reserve": "Band qilish"
+  },
+  "hero": {
+    "title": "AURA",
+    "badge": "Toshkent",
+    "subtitle": "Toshkent markazidagi kafe",
+    "description": "Har bir qahva finjoni — bu hikoya, har bir taom — did asari bo'lgan qulay joy",
+    "cta_menu": "Menyuni ko'rish",
+    "cta_reserve": "Stol band qilish"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "subtitle": "Bizning tariximiz",
+    "text1": "«AURA» kafesi — qulaylik, did va atmosfera uyg'unlashgan joy. Biz har bir mehmon o'zini uyidek his qiladigan makon yaratish orzusi bilan ochdik.",
+    "text2": "Oshpazlarimiz mahalliy yangi mahsulotlardan har bir taomni sevgi bilan tayyorlaydi. Xushbo'y qahvadan tortib nafis desertlargacha — barchasi sizning zavqingiz uchun.",
+    "stat1_value": "500+",
+    "stat1_label": "Mamnun mehmonlar",
+    "stat2_value": "50+",
+    "stat2_label": "Menyu taomlar",
+    "stat3_value": "8:00–22:00",
+    "stat3_label": "Har kuni"
+  },
+  "menu": {
+    "title": "Bizning menyu",
+    "subtitle": "Kategoriyani tanlang",
+    "order_btn": "Buyurtma",
+    "calories": "kkal",
+    "currency": "so'm",
+    "categories": {
+      "coffee": "Qahva",
+      "breakfast": "Nonushtalar",
+      "pastry": "Pishiriqlar",
+      "desserts": "Desertlar",
+      "drinks": "Ichimliklar",
+      "lunch": "Biznes-lunch",
+      "hot": "Issiq taomlar",
+      "salads": "Salatlar",
+      "vegan": "Vegetarian",
+      "seasonal": "Mavsumiy"
+    }
+  },
+  "delivery": {
+    "title": "Yetkazib berish",
+    "subtitle": "To'g'ridan-to'g'ri sizga yetkazamiz",
+    "min_order": "Minimal buyurtma",
+    "min_order_value": "50 000 so'm",
+    "delivery_time": "Yetkazib berish vaqti",
+    "delivery_time_value": "30–60 daqiqa",
+    "delivery_zone": "Yetkazib berish hududi",
+    "delivery_zone_value": "Kafeden 5 km ichida",
+    "free_delivery": "Bepul yetkazib berish",
+    "free_delivery_value": "150 000 so'mdan buyurtmada",
+    "order_btn": "Yetkazib berishni buyurtma qilish",
+    "call_btn": "Qo'ng'iroq qilish"
+  },
+  "promotions": {
+    "title": "Aksiyalar",
+    "subtitle": "Maxsus takliflar",
+    "promo_code_placeholder": "Promokod kiriting",
+    "promo_code_btn": "Qo'llash",
+    "promo_code_success": "Promokod qo'llandi!",
+    "promo_code_error": "Noto'g'ri promokod",
+    "timer_label": "Aksiya tugashiga:",
+    "days": "kun",
+    "hours": "soat",
+    "minutes": "daqiqa",
+    "seconds": "soniya"
+  },
+  "gallery": {
+    "title": "Galereya",
+    "subtitle": "Kafe atmosferasi"
+  },
+  "faq": {
+    "title": "Ko'p so'raladigan savollar",
+    "subtitle": "Savollaringizga javoblar"
+  },
+  "testimonials": {
+    "title": "Sharhlar",
+    "subtitle": "Mehmonlarimiz nima deydi"
+  },
+  "qrmenu": {
+    "title": "QR-menyu",
+    "subtitle": "Menyuni ko'rish uchun QR-kodni skaner qiling",
+    "download_btn": "QR-kodni yuklab olish",
+    "description": "To'liq kafe menyusini ochish uchun telefon kamerasini QR-kodga qarating"
+  },
+  "contact": {
+    "title": "Kontaktlar",
+    "subtitle": "Bizni toping",
+    "address": "Afrosiyob ko'chasi 12/2, Toshkent",
+    "phone": "+998 90 131-46-96",
+    "hours": "Har kuni 8:00 — 22:00",
+    "manager": "Menejer: Abbas Qurbonov",
+    "route_btn": "Yo'nalish qurish",
+    "form_title": "Bizga yozing",
+    "form_name": "Ismingiz",
+    "form_phone": "Telefon raqam",
+    "form_message": "Xabar",
+    "form_submit": "Yuborish",
+    "form_success": "Xabar yuborildi!",
+    "telegram": "Telegram",
+    "instagram": "Instagram"
+  },
+  "footer": {
+    "nav_title": "Navigatsiya",
+    "rights": "Barcha huquqlar himoyalangan",
+    "made_with": "Sevgi bilan yaratildi"
+  },
+  "badges": {
+    "spicy": "Achchiq",
+    "halal": "Halol",
+    "vegan": "Vegan",
+    "new": "Yangilik",
+    "popular": "Mashhur"
+  },
+  "reservation": {
+    "title": "Band qilish",
+    "name": "Ism",
+    "phone": "Telefon",
+    "date": "Sana",
+    "time": "Vaqt",
+    "guests": "Mehmonlar soni",
+    "submit": "Band qilish",
+    "success": "Stol band qilindi! Siz bilan bog'lanamiz."
+  }
+}
