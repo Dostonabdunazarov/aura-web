@@ -17,10 +17,10 @@ export default function Contact() {
   const { t } = useTranslation()
 
   const infoRows = [
-    { icon: MapPin, text: t('contact.address') },
-    { icon: Phone, text: t('contact.phone'), href: 'tel:+998901314696' },
-    { icon: Clock, text: t('contact.hours') },
-    { icon: User, text: t('contact.manager') },
+    { id: 'address', icon: MapPin, text: t('contact.address') },
+    { id: 'phone', icon: Phone, text: t('contact.phone'), href: 'tel:+998901314696' },
+    { id: 'hours', icon: Clock, text: t('contact.hours') },
+    { id: 'manager', icon: User, text: t('contact.manager') },
   ]
 
   return (
@@ -44,8 +44,8 @@ export default function Contact() {
             viewport={{ once: true, margin: '-80px' }}
             className="flex flex-col gap-5"
           >
-            {infoRows.map(({ icon: Icon, text, href }) => (
-              <motion.div key={text} variants={itemVariants} className="flex items-start gap-3">
+            {infoRows.map(({ id, icon: Icon, text, href }) => (
+              <motion.div key={id} variants={itemVariants} className="flex items-start gap-3">
                 <div
                   className="mt-0.5 w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
                   style={{ backgroundColor: 'var(--color-gold)' }}
