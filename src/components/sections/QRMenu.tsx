@@ -5,7 +5,7 @@ import { Download, QrCode } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import AnimatedSection from '../ui/AnimatedSection'
 
-const MENU_URL = typeof window !== 'undefined' ? `${window.location.origin}/#menu` : 'https://aura-cafe.uz/#menu'
+const MENU_URL = 'https://aura.hypex.site/#menu'
 
 export default function QRMenu() {
   const { t } = useTranslation()
@@ -22,7 +22,7 @@ export default function QRMenu() {
   }
 
   return (
-    <section id="qrmenu" style={{ backgroundColor: 'var(--color-roast)' }} className="py-20 px-4 md:px-8">
+    <section id="qrmenu" className="glass-dark py-20 px-4 md:px-8">
       <div className="max-w-xl mx-auto text-center">
         <AnimatedSection className="mb-10">
           <p className="text-sm font-medium tracking-widest uppercase mb-2" style={{ color: 'var(--color-gold)' }}>

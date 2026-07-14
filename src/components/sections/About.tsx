@@ -21,7 +21,7 @@ export default function About() {
   const { t } = useTranslation()
 
   return (
-    <section id="about" style={{ backgroundColor: 'var(--color-cream)' }} className="py-20 px-4 md:px-8">
+    <section id="about" className="glass-light py-20 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection className="text-center mb-14">
           <p className="text-sm font-medium tracking-widest uppercase mb-2" style={{ color: 'var(--color-gold)' }}>

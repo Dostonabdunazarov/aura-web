@@ -35,26 +35,17 @@ export default function Hero() {
       ref={ref}
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Video background with parallax */}
-      <motion.div className="absolute inset-0 z-0" style={{ y }}>
-        <video
-          className="w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/images/hero-fallback.jpg"
-        >
-          <source src="/videos/hero.mp4" type="video/mp4" />
-          <source src="/videos/hero.webm" type="video/webm" />
-        </video>
-
-        {/* Dark overlay */}
+      {/* Extra darkening at the hero so the headline reads crisply over the
+          global video background. Parallax keeps the depth feel on scroll. */}
+      <motion.div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{ y }}
+      >
         <div
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(to bottom, rgba(15,10,6,0.55) 0%, rgba(15,10,6,0.72) 60%, rgba(15,10,6,0.92) 100%)',
+              'linear-gradient(to bottom, rgba(15,10,6,0.35) 0%, rgba(15,10,6,0.45) 60%, rgba(15,10,6,0.70) 100%)',
           }}
         />
       </motion.div>

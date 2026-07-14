@@ -5,22 +5,7 @@
   --font-accent: "DM Serif Display", serif;
   --font-body: "Inter", sans-serif;
 
-  /* Light theme colors */
-  --color-cream: #FAF6F0;
-  --color-espresso: #1C1008;
-  --color-roast: #3D2B1F;
-  --color-gold: #C9973A;
-  --color-gold-light: #E8C07A;
-  --color-muted: #8B7355;
-  --color-card: #FFFFFF;
-  --color-border: #E8DDD0;
-}
-
-:root {
-  color-scheme: light dark;
-}
-
-html.dark {
+  /* Dark theme (only theme) */
   --color-cream: #0F0A06;
   --color-espresso: #F5EFE6;
   --color-roast: #2A1F15;
@@ -31,22 +16,45 @@ html.dark {
   --color-border: #2A1F15;
 }
 
+:root {
+  color-scheme: dark;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+  /* Opaque fallback behind the fixed video background. */
+  background-color: var(--color-cream);
 }
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-cream);
+  /* Transparent so the fixed video background (behind body) shows through the
+     translucent glass sections. Opaque fallback lives on <html>. */
+  background-color: transparent;
   color: var(--color-espresso);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 h1, h2, h3 {
   font-family: var(--font-display);
   font-style: italic;
+}
+
+/* ---- Glassmorphism section backgrounds over the video ----
+   Sections become translucent frosted panels so the fixed video background
+   shows through, while the blur + tint keep text fully readable. */
+.glass-light {
+  background-color: color-mix(in srgb, var(--color-cream) 62%, transparent);
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+}
+
+.glass-dark {
+  background-color: color-mix(in srgb, var(--color-roast) 55%, transparent);
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
 }

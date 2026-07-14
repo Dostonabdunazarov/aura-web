@@ -1,6 +1,7 @@
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import ScrollToTop from './components/ui/ScrollToTop'
+import VideoBackground from './components/ui/VideoBackground'
 import Hero from './components/sections/Hero'
 import About from './components/sections/About'
 import Menu from './components/sections/Menu'
@@ -14,7 +15,8 @@ import Contact from './components/sections/Contact'
 
 export default function App() {
   return (
-    <div style={{ backgroundColor: 'var(--color-cream)', color: 'var(--color-espresso)' }}>
+    <div style={{ color: 'var(--color-espresso)' }} className="relative">
+      <VideoBackground />
       <Navbar />
       <Hero />
       <About />

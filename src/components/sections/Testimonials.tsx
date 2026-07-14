@@ -41,7 +41,7 @@ export default function Testimonials() {
   const doubled = [...testimonials, ...testimonials]
 
   return (
-    <section id="testimonials" style={{ backgroundColor: 'var(--color-cream)' }} className="py-20 overflow-hidden">
+    <section id="testimonials" className="glass-light py-20 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 md:px-8">
         <AnimatedSection className="text-center mb-14">
           <p className="text-sm font-medium tracking-widest uppercase mb-2" style={{ color: 'var(--color-gold)' }}>

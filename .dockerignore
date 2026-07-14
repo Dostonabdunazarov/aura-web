@@ -1,0 +1,39 @@
+# Keep the build context small and the image clean.
+
+# Dependencies & build artifacts (reinstalled/rebuilt inside the image)
+node_modules
+dist
+dist-ssr
+*.tsbuildinfo
+
+# Git & CI
+.git
+.gitignore
+.github
+
+# Docker (no need to send these into the build)
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# Editor / IDE / OS
+.vscode
+.idea
+.claude
+.DS_Store
+Thumbs.db
+
+# Logs & caches
+logs
+*.log
+npm-debug.log*
+.cache
+coverage
+
+# Project docs not needed at build time
+README.md

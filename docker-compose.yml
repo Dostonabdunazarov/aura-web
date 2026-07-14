@@ -1,6 +1,16 @@
 services:
-  aura-web:
-    build: .
-    ports:
-      - "3000:80"
+  aura-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aura-site:latest
+    container_name: aura-ui
     restart: unless-stopped
+    networks:
+      - proxy
+
+# Внешняя сеть общего обратного прокси (Caddy в corpdev/infra/).
+# Создаётся один раз на сервере:  docker network create proxy
+networks:
+  proxy:
+    external: true

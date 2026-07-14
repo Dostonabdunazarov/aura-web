@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { useScrollPosition } from '../../hooks/useScrollPosition'
-import ThemeToggle from '../ui/ThemeToggle'
 import LanguageSwitcher from '../ui/LanguageSwitcher'
 
 const NAV_LINKS = [
@@ -78,7 +77,6 @@ export default function Navbar() {
             {/* Right controls */}
             <div className="flex items-center gap-3">
               <LanguageSwitcher />
-              <ThemeToggle />
 
               {/* Reserve button (desktop) */}
               <Link

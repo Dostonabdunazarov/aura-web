@@ -1,0 +1,37 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-aura
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to server over SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script_stop: true
+          command_timeout: 30m
+          script: |
+            set -e
+            # Клонируем при первом деплое, дальше — обновляем.
+            if [ ! -d /root/aura-web/.git ]; then
+              git clone git@github.com:Dostonabdunazarov/aura-web.git /root/aura-web
+            fi
+            cd /root/aura-web
+            git fetch origin main
+            git reset --hard origin/main
+            # Общая сеть обратного прокси Caddy (idempotent — прокси поднимается в corpdev/infra).
+            docker network inspect proxy >/dev/null 2>&1 || docker network create proxy
+            # Сборка и запуск статического сайта aura.
+            docker compose up -d --build
+            docker image prune -f
