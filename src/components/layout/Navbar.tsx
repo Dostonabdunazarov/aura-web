@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-scroll'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
+import { ArrowRight, Menu, X } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { useScrollPosition } from '../../hooks/useScrollPosition'
 import LanguageSwitcher from '../ui/LanguageSwitcher'
@@ -40,7 +40,7 @@ export default function Navbar() {
         }}
       >
         <div className="container-wide px-4 sm:px-6 lg:px-0">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-14 lg:h-16">
             {/* Logo */}
             <Link to="hero" smooth duration={600} className="cursor-pointer">
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
@@ -62,8 +62,8 @@ export default function Navbar() {
                   smooth
                   duration={600}
                   offset={-80}
-                  className="text-sm font-medium tracking-wide cursor-pointer transition-colors duration-200 relative group"
-                  style={{ color: 'var(--color-espresso)', fontFamily: 'var(--font-body)' }}
+                  className="text-[22px] tracking-wide cursor-pointer transition-colors duration-200 relative group"
+                  style={{ color: 'var(--color-espresso)', fontFamily: 'var(--font-display)', fontStyle: 'italic' }}
                 >
                   {t(key)}
                   <span
@@ -81,22 +81,17 @@ export default function Navbar() {
               {/* Reserve button (desktop) */}
               <Link
                 to="contact"
+                href="#contact"
                 smooth
                 duration={600}
                 offset={-80}
-                className="hidden lg:block cursor-pointer"
+                className="group relative hidden lg:inline-flex items-center gap-1.5 ml-2 pb-0.5 text-lg tracking-wide cursor-pointer text-gold"
+                style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}
               >
-                <motion.button
-                  whileHover={{ scale: 1.04 }}
-                  whileTap={{ scale: 0.96 }}
-                  className="px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200"
-                  style={{
-                    backgroundColor: 'var(--color-gold)',
-                    color: '#fff',
-                  }}
-                >
-                  {t('nav.reserve')}
-                </motion.button>
+                {t('nav.reserve')}
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={1.5} aria-hidden />
+                <span aria-hidden className="absolute left-0 bottom-0 h-px w-full bg-gold/40" />
+                <span aria-hidden className="absolute left-0 bottom-0 h-px w-full origin-left scale-x-0 bg-gold transition-transform duration-500 ease-out group-hover:scale-x-100" />
               </Link>
 
               {/* Burger (mobile) */}
@@ -168,18 +163,17 @@ export default function Navbar() {
               >
                 <Link
                   to="contact"
+                  href="#contact"
                   smooth
                   duration={600}
                   offset={-80}
                   onClick={() => setMobileOpen(false)}
-                  className="block cursor-pointer"
+                  className="group relative inline-flex items-center gap-2 pb-1 text-xl tracking-wide cursor-pointer text-gold"
+                  style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}
                 >
-                  <button
-                    className="w-full py-3 rounded-lg font-semibold text-white"
-                    style={{ backgroundColor: 'var(--color-gold)' }}
-                  >
-                    {t('nav.reserve')}
-                  </button>
+                  {t('nav.reserve')}
+                  <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={1.5} aria-hidden />
+                  <span aria-hidden className="absolute left-0 bottom-0 h-px w-full bg-gold/40" />
                 </Link>
               </motion.div>
             </motion.div>
