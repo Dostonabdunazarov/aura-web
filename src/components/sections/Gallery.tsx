@@ -15,7 +15,7 @@ export default function Gallery() {
 
   return (
     <section id="gallery" className="glass-light py-20 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto">
+      <div className="container-wide">
         <AnimatedSection className="text-center mb-14">
           <p className="text-sm font-medium tracking-widest uppercase mb-2" style={{ color: 'var(--color-gold)' }}>
             {t('gallery.subtitle')}

@@ -39,7 +39,7 @@ export default function Navbar() {
           boxShadow: scrolled ? '0 4px 32px rgba(0,0,0,0.18)' : 'none',
         }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container-wide px-4 sm:px-6 lg:px-0">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <Link to="hero" smooth duration={600} className="cursor-pointer">
