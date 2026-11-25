@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import DishBadge from './DishBadge'
 import type { MenuItem } from '../../types'
+import SafeImage from './SafeImage'
 
 export default function MenuCard({ item }: { item: MenuItem }) {
   const { t } = useTranslation()
@@ -13,7 +14,7 @@ export default function MenuCard({ item }: { item: MenuItem }) {
       style={{ backgroundColor: 'var(--color-card)', border: '1px solid var(--color-border)' }}
     >
       <div className="relative overflow-hidden h-48">
-        <img
+        <SafeImage
           src={item.image}
           alt={item.name}
           loading="lazy"

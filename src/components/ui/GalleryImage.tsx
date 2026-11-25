@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import type { GalleryItem } from '../../types'
+import SafeImage from './SafeImage'
 
 interface Props {
   item: GalleryItem
@@ -19,7 +20,7 @@ export default function GalleryImage({ item, onClick }: Props) {
       className={`relative overflow-hidden rounded-2xl cursor-pointer ${spanClass}`}
       style={{ minHeight: '200px' }}
     >
-      <img
+      <SafeImage
         src={item.src}
         alt={item.alt}
         loading="lazy"

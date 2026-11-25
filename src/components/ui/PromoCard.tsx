@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import type { Promotion } from '../../types'
+import SafeImage from './SafeImage'
 
 const typeEmoji: Record<string, string> = {
   morning: '🌅',
@@ -53,7 +54,7 @@ export default function PromoCard({ promo }: { promo: Promotion }) {
       style={{ backgroundColor: 'var(--color-card)', border: '1px solid var(--color-border)' }}
     >
       <div className="relative h-44 overflow-hidden">
-        <img
+        <SafeImage
           src={promo.image}
           alt={promo.title}
           loading="lazy"

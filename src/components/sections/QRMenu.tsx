@@ -51,12 +51,6 @@ export default function QRMenu() {
                 bgColor="#ffffff"
                 fgColor="#1C1008"
                 level="H"
-                imageSettings={{
-                  src: '',
-                  excavate: false,
-                  width: 0,
-                  height: 0,
-                }}
               />
             </motion.div>
 
