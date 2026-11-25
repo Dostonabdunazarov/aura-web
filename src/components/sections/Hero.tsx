@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-scroll'
+import { ArrowRight } from 'lucide-react'
 
 const containerVariants = {
   hidden: {},
@@ -105,49 +106,37 @@ export default function Hero() {
         {/* CTA Buttons */}
         <motion.div
           variants={itemVariants}
-          className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="mt-10 flex flex-col sm:flex-row gap-5 sm:gap-8 justify-center items-center"
         >
-          <Link to="menu" smooth duration={600} offset={-80}>
-            <button
-              className="px-8 py-3.5 rounded-full text-sm font-semibold tracking-widest uppercase cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95"
-              style={{
-                backgroundColor: 'var(--color-gold)',
-                color: '#0F0A06',
-                fontFamily: 'var(--font-body)',
-              }}
-              onMouseEnter={e =>
-                ((e.currentTarget as HTMLButtonElement).style.backgroundColor = 'var(--color-gold-light)')
-              }
-              onMouseLeave={e =>
-                ((e.currentTarget as HTMLButtonElement).style.backgroundColor = 'var(--color-gold)')
-              }
-            >
-              {t('hero.cta_menu')}
-            </button>
+          <Link
+            to="menu"
+            href="#menu"
+            smooth
+            duration={600}
+            offset={-80}
+            className="group relative inline-flex items-center gap-2 pb-1 text-xl md:text-2xl tracking-wide cursor-pointer text-gold"
+            style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}
+          >
+            {t('hero.cta_menu')}
+            <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1.5" strokeWidth={1.5} aria-hidden />
+            <span aria-hidden className="absolute left-0 bottom-0 h-px w-full bg-gold/40" />
+            <span aria-hidden className="absolute left-0 bottom-0 h-px w-full origin-left scale-x-0 bg-gold transition-transform duration-500 ease-out group-hover:scale-x-100" />
           </Link>
 
-          <Link to="contact" smooth duration={600} offset={-80}>
-            <button
-              className="px-8 py-3.5 rounded-full text-sm font-semibold tracking-widest uppercase cursor-pointer border transition-all duration-300 hover:scale-105 active:scale-95"
-              style={{
-                borderColor: 'rgba(245,239,230,0.5)',
-                color: '#FAF6F0',
-                backgroundColor: 'transparent',
-                fontFamily: 'var(--font-body)',
-              }}
-              onMouseEnter={e => {
-                const btn = e.currentTarget as HTMLButtonElement
-                btn.style.borderColor = 'var(--color-gold)'
-                btn.style.color = 'var(--color-gold)'
-              }}
-              onMouseLeave={e => {
-                const btn = e.currentTarget as HTMLButtonElement
-                btn.style.borderColor = 'rgba(245,239,230,0.5)'
-                btn.style.color = '#FAF6F0'
-              }}
-            >
-              {t('hero.cta_reserve')}
-            </button>
+          <span aria-hidden className="hidden sm:block w-1.5 h-1.5 rotate-45 bg-gold/70" />
+
+          <Link
+            to="contact"
+            href="#contact"
+            smooth
+            duration={600}
+            offset={-80}
+            className="group relative inline-flex items-center pb-1 text-xl md:text-2xl tracking-wide cursor-pointer text-espresso transition-colors duration-300 hover:text-gold"
+            style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}
+          >
+            {t('hero.cta_reserve')}
+            <span aria-hidden className="absolute left-0 bottom-0 h-px w-full bg-espresso/30" />
+            <span aria-hidden className="absolute left-0 bottom-0 h-px w-full origin-left scale-x-0 bg-gold transition-transform duration-500 ease-out group-hover:scale-x-100" />
           </Link>
         </motion.div>
       </motion.div>
