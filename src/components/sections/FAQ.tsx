@@ -13,7 +13,7 @@ export default function FAQ() {
           <p className="text-sm font-medium tracking-widest uppercase mb-2" style={{ color: 'var(--color-gold)' }}>
             {t('faq.subtitle')}
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-cream)' }}>
+          <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-espresso)' }}>
             {t('faq.title')}
           </h2>
         </AnimatedSection>

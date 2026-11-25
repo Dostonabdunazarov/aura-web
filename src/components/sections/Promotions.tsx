@@ -13,7 +13,7 @@ export default function Promotions() {
           <p className="text-sm font-medium tracking-widest uppercase mb-2" style={{ color: 'var(--color-gold)' }}>
             {t('promotions.subtitle')}
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-cream)' }}>
+          <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-espresso)' }}>
             {t('promotions.title')}
           </h2>
         </AnimatedSection>

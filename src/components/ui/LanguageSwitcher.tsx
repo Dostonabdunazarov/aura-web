@@ -31,7 +31,7 @@ export default function LanguageSwitcher() {
             {lang}
           </motion.button>
           {idx < LANGS.length - 1 && (
-            <span style={{ color: 'var(--color-border)' }}>|</span>
+            <span style={{ color: 'var(--color-muted)', opacity: 0.5 }}>|</span>
           )}
         </span>
       ))}
