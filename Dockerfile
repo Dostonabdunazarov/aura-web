@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # ── Stage 1: build the static site ───────────────────────────────
-FROM node:20-alpine AS build
+FROM node:22-alpine AS build
 WORKDIR /app
 
 # Install dependencies first (cached unless lockfile changes)
@@ -13,7 +13,7 @@ COPY . .
 RUN npm run build
 
 # ── Stage 2: serve with nginx ────────────────────────────────────
-FROM nginx:1.27-alpine AS runtime
+FROM nginx:1.30-alpine AS runtime
 
 # SPA-aware nginx config (history fallback, gzip, asset caching)
 COPY nginx.conf /etc/nginx/conf.d/default.conf
